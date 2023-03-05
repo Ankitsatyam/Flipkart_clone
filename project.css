@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+:root {
+    --main-bg-color: #2874f0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: var(--main-bg-color);
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 88px;
+    padding: 0 25px;
+}
+
+nav ul {
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    font-weight: bolder;
+}
+
+.Search {
+    display: flex;
+    align-items: center;
+}
+
+.Search input {
+    width: 35vw;
+    height: 27px;
+    border-radius: 5px;
+    margin: 0 16px 0 56px;
+    padding: 0 12px;
+}
+
+.slider {
+    width: 80vw;
+    margin: 12px auto;
+    overflow: hidden;
+}
+
+.cart {
+    max-width: 91vw;
+    margin: 37px auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.carts {
+    display: flex;
+    overflow: scroll;
+}
+
+.cart-item {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.cart h2 {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    min-height: calc(100vh - 58px - 12vh);
+}
+
+footer {
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.flex-all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 5px 10px;
+    color: white;
+    background: rgb(163, 163, 240);
+    border: 2px solid white;
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+}
+
+.Search button {
+    display: flex;
+}
+
+.my-1 {
+    margin: 5px 0;
+}
+
+.my-2 {
+    margin: 26px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media screen and (max-width:900px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    .slider {
+        height: 23vh;
+    }
+
+    .logo {
+        justify-content: center;
+        margin: 12px 0;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .Search {
+        justify-content: center;
+    }
+
+    .Search input {
+        margin: 12px 20px;
+    }
+
+    nav ul {
+        height: 34px;
+    }
+
+    .cart-item img {
+        width: 140px;
+    }
+
+    .Search button {
+        justify-content: center;
+        align-items: center;
+    }
+}
